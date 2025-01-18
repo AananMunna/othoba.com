@@ -2,8 +2,8 @@ import 'react'
 
 const Footer = () => {
   return (
-    <div className='container mx-auto p-4 pb-20 pt-16 bg-[#f8f8f8]'>
-        <div className='lg:flex items-start justify-around gap-5'>
+    <div className=' p-4 pb-20 pt-16 bg-[#f8f8f8]'>
+        <div className='container mx-auto lg:flex items-start justify-around gap-5'>
 
             <div className='sm:flex justify-between items-start w-full lg:justify-around'>
             <div className=" mb-10">
@@ -70,8 +70,8 @@ const Footer = () => {
 
 
 
-        <hr  className='mt-5'/>
-        <div className=" items-center justify-between mt-4 md:flex">
+        <hr  className='mt-5 container mx-auto'/>
+        <div className="container mx-auto items-center justify-between mt-4 md:flex">
             <div className="">
                 <a href="#"><p className='text-sm text-center text-[#666666]'>Othoba.com Pvt Ltd</p></a>
             </div>

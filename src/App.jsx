@@ -17,6 +17,8 @@ import PopularBrand from './components/popularBrand/PopularBrand'
 import NewsLetter from './components/newsletter/NewsLetter'
 import Footer from './components/layOut/Footer'
 import PhonNavbar from './components/phonNavbar/PhonNavbar'
+import ImageCarousel from './components/imageCarousel/ImageCarousel'
+import ImageGallery from './components/imageGallery/ImageGallery'
 
 const App = () => {
   return (
@@ -24,11 +26,13 @@ const App = () => {
       <Header />
       <Navbar />
       <CircleCard />
+      <ImageCarousel />
       <StaticInfo />
       <Gif />
       <HeroCard />
       <SmallCard />
       <SmallCard2 />
+      <ImageGallery />
       <TrendingProduct />
       <TrendingBanner />
       <RecommendedProduct />
