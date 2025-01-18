@@ -2,7 +2,7 @@ import 'react'
 
 const Footer = () => {
   return (
-    <div className='container mx-auto p-4 my-10'>
+    <div className='container mx-auto p-4 pb-20 pt-16 bg-[#f8f8f8]'>
         <div className='lg:flex items-start justify-around gap-5'>
 
             <div className='sm:flex justify-between items-start w-full lg:justify-around'>

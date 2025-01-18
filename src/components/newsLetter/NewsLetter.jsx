@@ -2,7 +2,7 @@ import 'react'
 
 const NewsLetter = () => {
   return (
-    <div className='bg-[#439ddf] my-5'>
+    <div className='bg-[#439ddf] mt-14'>
         <div className="container mx-auto py-6 px-4 items-center justify-between gap-10 md:flex">
             <div className="left text-white text-center my-5">
             <i className="bi bi-envelope text-4xl"></i>

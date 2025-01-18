@@ -16,6 +16,7 @@ import TopBrands from './components/topBrands/TopBrands'
 import PopularBrand from './components/popularBrand/PopularBrand'
 import NewsLetter from './components/newsletter/NewsLetter'
 import Footer from './components/layOut/Footer'
+import PhonNavbar from './components/phonNavbar/PhonNavbar'
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
       <PopularBrand />
       <NewsLetter />
       <Footer />
+      <PhonNavbar />
     </>
   )
 }
