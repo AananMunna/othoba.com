@@ -14,7 +14,7 @@ import RecommendedProduct from './components/recommendedProduct/RecommendedProdu
 import Banner from './components/recommendedProduct/Banner';
 import TopBrands from './components/topBrands/TopBrands'
 import PopularBrand from './components/popularBrand/PopularBrand'
-import NewsLetter from './components/newsletter/NewsLetter'
+import NewsLetter from './components/newsLetter/NewsLetter'
 import Footer from './components/layOut/Footer'
 import PhonNavbar from './components/phonNavbar/PhonNavbar'
 import ImageCarousel from './components/imageCarousel/ImageCarousel'
