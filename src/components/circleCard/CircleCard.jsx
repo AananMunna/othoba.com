@@ -3,9 +3,9 @@ import 'react'
 const CircleCard = () => {
   return (
     <div className='container p-4 mx-auto'>
-        <div className="circleCard lg:pl-[730px] h-full flex items-center justify-center lg:gap-5 overflow-x-scroll scroll-smooth transition-all [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div className="circleCard pl-[730px] h-full flex items-center justify-center lg:gap-5 overflow-x-scroll scroll-smooth transition-all [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             
-            <div className="card flex flex-col items-center justify-center text-center">
+            <div className="card flex flex-col items-center justify-center text-center ">
                 <img className='max-w-none w-20 lg:w-28 rounded-full cursor-pointer hover:scale-95 hover:border-8 transition-all border-[#fff] hover:shadow-2xl' src="https://images.othoba.com/images/thumbs/0584115_furniture-big-saving-days_120.jpeg" alt="" />
                 <a href="#" className='w-28 font-medium text-xs mt-3 leading-none uppercase hover:text-blue-500 transition-all'>Furniture Big Saving Days</a>
             </div>
