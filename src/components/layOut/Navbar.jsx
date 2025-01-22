@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
         <div className='hidden md:block'>
             <div className="/cart text-white pl-3 md:pl-5">
-            <Link to="Cart" className='flex items-center flex-col'>
+            <Link to="/cart" className='flex items-center flex-col'>
             <i className="bi bi-cart md:text-2xl"></i>
             <span className='text-xs'>Cart</span>
             </Link>
