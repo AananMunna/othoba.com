@@ -4,6 +4,7 @@ import PhonNavbar from '../phonNavbar/PhonNavbar';
 import Header from '../layOut/Header';
 import Navbar from '../layOut/Navbar';
 import Breadcrumb from './BreadCumb';
+import { Link } from 'react-router-dom';
 
 const ShoppingPage = () => {
   return (
@@ -14,7 +15,7 @@ const ShoppingPage = () => {
           <Breadcrumb />
         </div>
     <div className="bg-gradient-to-br from-blue-50 to-gray-100 min-h-screen font-sans">
-      {/* Header */}
+
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
@@ -54,9 +55,11 @@ const ShoppingPage = () => {
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-gray-800">Product Name</h3>
                   <p className="text-gray-600 mt-2">$99.99</p>
+                  <Link to='/cart'>
                   <button className="bg-blue-600 text-white mt-4 py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors w-full">
                     Add to Cart
                   </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -80,22 +83,17 @@ const ShoppingPage = () => {
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-gray-800">Best Seller</h3>
                   <p className="text-gray-600 mt-2">$49.99</p>
+                  <Link to='/cart'>
                   <button className="bg-blue-600 text-white mt-4 py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors w-full">
                     Add to Cart
                   </button>
+                  </Link>
                 </div>
               </div>
             ))}
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-blue-800 text-white py-6 mt-12">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2025 ShopEase. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
     <Footer />
     <PhonNavbar />

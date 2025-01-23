@@ -33,12 +33,12 @@ const Footer = () => {
                 <h3 className='font-bold mb-4 uppercase'>company</h3>
                 <ul className='text-sm text-[#666666]'>
                     <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">About Us</Link></li>
-                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Career</Link></li>
-                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Contact Us</Link></li>
-                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Privacy Policy</Link></li>
-                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Othoba Certified</Link></li>
-                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Terms & Condition</Link></li>
-                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Next/Same day delivery TC</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/career">Career</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/contactUs">Contact Us</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/CancellationAndReturns">Privacy Policy</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/OthobaCertificate">Othoba Certified</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/CancellationAndReturns">Terms & Condition</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/NextDayDeliveryTC">Next/Same day delivery TC</Link></li>
                 </ul>
             </div>
             </div>
@@ -47,22 +47,22 @@ const Footer = () => {
             <div className=" mb-10">
                 <h3 className='font-bold mb-4 uppercase'>My Account</h3>
                 <ul className='text-sm text-[#666666]'>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Orders</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Addresses</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">My Wishlist</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Order History</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Track My Order</a></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/OrdersPage">Orders</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/AddressPage">Addresses</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/wishList">My Wishlist</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/OrderHistory">Order History</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/TrackMyOrder">Track My Order</Link></li>
                 </ul>
             </div>
 
             <div className=" mb-10">
                 <h3 className='font-bold mb-4 uppercase'>customer service</h3>
                 <ul className='text-sm text-[#666666]'>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Payment Methods</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Support Center</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">How To Shop On Othoba</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Featured Recommendation</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Cancellation, Return & Refund</a></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/PaymentMethods">Payment Methods</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/SupportCenter">Support Center</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/HowToShopOnOthoba">How To Shop On Othoba</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/FeaturedRecommendations">Featured Recommendation</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/CancellationAndReturns">Cancellation, Return & Refund</Link></li>
                 </ul>
             </div>
             </div>

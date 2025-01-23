@@ -17,6 +17,18 @@ import ToyProductPage from './components/RouterComponents/ToyProductPage'
 import CancellationAndReturns from './components/RouterComponents/CancellationAndReturns'
 import AboutUs from './components/RouterComponents/AboutUs'
 import ShoppingPage from './components/RouterComponents/ShoppingPage'
+import CareerPage from './components/RouterComponents/CareerPage'
+import ContactUs from './components/RouterComponents/ContactUs'
+import OthobaCertificate from './components/RouterComponents/OthobaCertificate'
+import NextDayDeliveryTC from './components/RouterComponents/NextDayDeliveryTC'
+import OrdersPage from './components/RouterComponents/OrdersPage'
+import AddressPage from './components/RouterComponents/AddressPage'
+import OrderHistory from './components/RouterComponents/OrderHistory'
+import TrackMyOrder from './components/RouterComponents/TrackMyOrder'
+import PaymentMethods from './components/RouterComponents/PaymentMethods'
+import SupportCenter from './components/RouterComponents/SupportCenter'
+import HowToShopOnOthoba from './components/RouterComponents/HowToShopOnOthoba'
+import FeaturedRecommendations from './components/RouterComponents/FeaturedRecommendations'
 
 const App = () => {
   return (
@@ -37,6 +49,18 @@ const App = () => {
       <Route path="/CancellationAndReturns" element={<CancellationAndReturns />} />
       <Route path="/aboutUs" element={<AboutUs />} />
       <Route path="/shop" element={<ShoppingPage />} />
+      <Route path="/career" element={<CareerPage />} />
+      <Route path="/contactUs" element={<ContactUs />} />
+      <Route path="/OthobaCertificate" element={<OthobaCertificate />} />
+      <Route path="/NextDayDeliveryTC" element={<NextDayDeliveryTC />} />
+      <Route path="/OrdersPage" element={<OrdersPage />} />
+      <Route path="/AddressPage" element={<AddressPage />} />
+      <Route path="/OrderHistory" element={<OrderHistory />} />
+      <Route path="/TrackMyOrder" element={<TrackMyOrder />} />
+      <Route path="/PaymentMethods" element={<PaymentMethods />} />
+      <Route path="/SupportCenter" element={<SupportCenter />} />
+      <Route path="/HowToShopOnOthoba" element={<HowToShopOnOthoba />} />
+      <Route path="/FeaturedRecommendations" element={<FeaturedRecommendations />} />
       
     </Routes>
     <Toy />
