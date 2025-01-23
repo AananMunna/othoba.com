@@ -1,13 +1,15 @@
 import 'react'
 import logo from'../../assets/logoOthoba.png'
 import { Link } from 'react-router-dom'
+import HamburgerMenu from '../hamburgerMenu/HamburgerMenu'
 
 const Navbar = () => {
   return (
     <nav className=' bg-gradient-to-r from-cyan-500 to-blue-500'>
     <div className='container mx-auto p-4 flex justify-between items-center'>
         <div className="flex w-full">
-        <div>
+        <div className='flex gap-2'>
+            <HamburgerMenu />
             <Link to="/"><img src={logo} alt="logo" className='md:max-w-none'/></Link>
         </div>
         <div className="searchBar hidden rounded-sm md:flex items-center justify-between bg-white p-2 ml-3 md:mx-6 w-[500%]">

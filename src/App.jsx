@@ -31,10 +31,12 @@ import HowToShopOnOthoba from './components/RouterComponents/HowToShopOnOthoba'
 import FeaturedRecommendations from './components/RouterComponents/FeaturedRecommendations'
 import AccountPage from './components/RouterComponents/AccountPage'
 import ProductSearchPage from './components/RouterComponents/ProductSearchPage';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 const App = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/*" element={<NotFound />} />
