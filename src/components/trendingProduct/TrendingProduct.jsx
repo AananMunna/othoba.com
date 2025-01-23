@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; 
+import { Link } from "react-router-dom";
 
 const TrendingProduct = () => {
   const swiperRef = useRef(null);
@@ -63,7 +64,7 @@ const TrendingProduct = () => {
     <div className="container mx-auto m5-20 px-4">
     <div className="flex justify-between items-center py-4">
       <h3 className="font-semibold text-lg">Trending Products</h3>
-      <a href="#" className="text-sm font-semibold hover:text-[#4088bd] transition-all">More Products <i className="bi bi-arrow-right"></i></a>
+      <Link to="/ProductListingPage" className="text-sm font-semibold hover:text-[#4088bd] transition-all">More Products <i className="bi bi-arrow-right"></i></Link>
     </div>
       <Swiper
         slidesPerView={2} // Always 2 cards visible per row
@@ -85,7 +86,7 @@ const TrendingProduct = () => {
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="card flex flex-col  items-center justify-between border border-[#ddd] rounded-md p-5 sm:gap-5">
+            <Link to='/ProductDetailPage' className="card flex flex-col  items-center justify-between border border-[#ddd] rounded-md p-5 sm:gap-5">
               <div className="left cursor-pointer relative w-34">
                 <img
                   src={card.image}
@@ -127,7 +128,7 @@ const TrendingProduct = () => {
                 </div>
                 <h3 className="text-sm font-bold mt-2">{card.price} <del className="text-[#a8a7a7] ml-3">Tk 120</del></h3>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

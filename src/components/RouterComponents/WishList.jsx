@@ -3,6 +3,8 @@ import Footer from '../layOut/Footer';
 import Header from './../layOut/Header';
 import Navbar from '../layOut/Navbar';
 import { Link } from 'react-router-dom';
+import Breadcrumb from './BreadCumb';
+import PhonNavbar from '../phonNavbar/PhonNavbar';
 
 const WishList = () => {
   const [wishlistItems, setWishlistItems] = useState([
@@ -21,6 +23,10 @@ const WishList = () => {
     <>
     <Header />
     <Navbar />
+    
+    <div className=" bg-gray-50 p-4">
+    <Breadcrumb />
+    </div>
     <div className="min-h-screen bg-gray-100 py-8">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-800 mb-6">My Wish List</h1>
@@ -37,7 +43,7 @@ const WishList = () => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-48"
+                  className="w-full h-56"
                 />
                 <div className="p-4">
                   <h2 className="text-lg font-bold text-gray-800">{item.name}</h2>
@@ -61,6 +67,7 @@ const WishList = () => {
       </div>
     </div>
     <Footer />
+    <PhonNavbar />
     </>
   );
 };

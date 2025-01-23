@@ -1,6 +1,7 @@
 import  { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Link } from "react-router-dom";
 
 const HeroCard = () => {
   const swiperRef = useRef(null);
@@ -43,7 +44,7 @@ const HeroCard = () => {
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center py-4">
         <h3 className="font-semibold text-lg">Hot Deals of the Day</h3>
-        <a href="#" className="text-sm font-semibold hover:text-[#4088bd] transition-all">More Products <i className="bi bi-arrow-right"></i></a>
+        <Link to="/ProductListingPage" className="text-sm font-semibold hover:text-[#4088bd] transition-all">More Products <i className="bi bi-arrow-right"></i></Link>
       </div>
       <Swiper
         slidesPerView={1}
@@ -61,10 +62,12 @@ const HeroCard = () => {
           <SwiperSlide key={index}>
             <div className="card flex flex-col sm:flex-row items-center justify-between border border-[#4088bd] rounded-md p-5 sm:gap-5">
               <div className="left cursor-pointer relative sm:w-full">
+                <Link to='/ProductDetailPage'>
                 <img
                   src={card.image}
                   alt={card.title}
                 />
+                </Link>
                 <div className="bg-[#4e4e4e] flex items-center justify-evenly p-3 rounded-md text-white font-bold text-center gap-3 absolute bottom-0 w-full left-0 right-0 time">
                   <div>
                     <h6>00</h6>
@@ -86,7 +89,9 @@ const HeroCard = () => {
               </div>
               <div className="right sm:w-full">
                 <h2 className="text-lg mb-2 font-semibold cursor-pointer hover:text-[#4088bd] transition-all">
+                  <Link to='/ProductDetailPage'>
                   {card.title}
+                  </Link>
                 </h2>
                 <div className="star flex gap-1 text-[#ddd]">
                   <i className="bi bi-star-fill"></i>
@@ -99,10 +104,14 @@ const HeroCard = () => {
                   </span>
                 </div>
                 <h3 className="text-lg font-bold mt-2">{card.price}</h3>
+                <Link to='/ProductDetailPage'>
                 <button className="border-2 border-black rounded-sm py-1 px-5 text-center text-md font-semibold uppercase mt-2 hover:bg-[#5face4] hover:text-white hover:border-[#5face4] transition-all">
                   <i className="bi bi-cart text-xl mr-1"></i>buy now
                 </button>
+                </Link>
+                <Link to='/compare'>
                 <i className="fa-solid fa-scale-balanced text-2xl ml-5 cursor-pointer hover:text-[#5face4] transition-all"></i>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

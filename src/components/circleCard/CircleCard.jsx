@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const sliderData = [
   {
@@ -72,7 +73,7 @@ const CircleCard = () => {
         className="circleCard flex items-center justify-start gap-3 lg:gap-5 overflow-x-scroll scroll-smooth transition-all [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
       >
         {sliderData.map((item, index) => (
-          <div
+          <Link to="/ProductListingPage"
             key={index}
             className="card flex flex-col items-center justify-center text-center"
           >
@@ -81,13 +82,13 @@ const CircleCard = () => {
               src={item.src}
               alt={item.title}
             />
-            <a
-              href="#"
+            <Link
+              to="/ProductListingPage"
               className="w-20 sm:w-24 lg:w-28 font-medium text-xs mt-2 sm:mt-3 leading-none uppercase hover:text-blue-500 transition-all"
             >
               {item.title}
-            </a>
-          </div>
+            </Link>
+          </Link>
         ))}
       </div>
     </div>

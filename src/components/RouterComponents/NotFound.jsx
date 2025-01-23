@@ -2,6 +2,7 @@ import 'react'
 import Header from '../layOut/Header'
 import Navbar from '../layOut/Navbar'
 import Footer from '../layOut/Footer'
+import PhonNavbar from '../phonNavbar/PhonNavbar'
 
 const NotFound = () => {
   return (
@@ -12,6 +13,7 @@ const NotFound = () => {
             <h1 className='text-5xl text-white text-center pt-[70px]'>Not Found</h1>
         </div>
         <Footer />
+        <PhonNavbar />
     </div>
   )
 }

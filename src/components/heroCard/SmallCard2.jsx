@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Link } from "react-router-dom";
 
 const SmallCard2 = () => {
   const swiperRef = useRef(null);
@@ -76,6 +77,7 @@ const SmallCard2 = () => {
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
+            <Link to='/ProductDetailPage'>
             <div className="card flex flex-col sm:flex-row items-center justify-between gap-5">
               <div className="left cursor-pointer relative w-34">
                 <img
@@ -98,6 +100,7 @@ const SmallCard2 = () => {
                 <h3 className="text-sm font-bold mt-2">{card.price}</h3>
               </div>
             </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

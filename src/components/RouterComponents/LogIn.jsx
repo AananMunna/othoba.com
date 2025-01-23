@@ -3,6 +3,8 @@ import Header from '../layOut/Header'
 import Navbar from '../layOut/Navbar'
 import Footer from '../layOut/Footer'
 import { Link } from 'react-router-dom'
+import Breadcrumb from './BreadCumb'
+import PhonNavbar from '../phonNavbar/PhonNavbar'
 
   const LogIn = () => {
     
@@ -11,7 +13,9 @@ import { Link } from 'react-router-dom'
     <div>
         <Header />
         <Navbar />
-
+        <div className=" bg-gray-50 p-4">
+          <Breadcrumb />
+        </div>
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-bl from-green-400 via-blue-500 to-purple-600">
       <div className="bg-white rounded-lg shadow-2xl w-full max-w-md p-8">
         <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-6">Welcome Back</h2>
@@ -53,9 +57,9 @@ import { Link } from 'react-router-dom'
           </button>
         </form>
         <div className="flex justify-between items-center mt-4 text-sm text-gray-600">
-          <a href="/forgot-password" className="hover:underline">
+          <Link to="/forgotPassword" className="hover:underline">
             Forgot Password?
-          </a>
+          </Link>
           <Link to="/register" className="text-blue-600 hover:underline">
             Create Account
           </Link>
@@ -65,6 +69,7 @@ import { Link } from 'react-router-dom'
 
 
         <Footer />
+        <PhonNavbar />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Link } from "react-router-dom";
 
 const PopularBrand = () => {
   const swiperRef = useRef(null);
@@ -90,13 +91,13 @@ const PopularBrand = () => {
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index} >
-            <a href="#" className="">
+            <Link to="/ProductListingPage" className="">
                 <img
                   src={card.image}
                   alt={card.title}
                   className="w-[100%] h-auto"
                 />
-            </a>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -2,6 +2,8 @@ import 'react'
 import Header from '../layOut/Header'
 import Navbar from '../layOut/Navbar'
 import Footer from '../layOut/Footer'
+import Breadcrumb from './BreadCumb'
+import PhonNavbar from '../phonNavbar/PhonNavbar'
 
 const Compare = () => {
   const products = [
@@ -32,6 +34,9 @@ const Compare = () => {
     <div>
         <Header />
         <Navbar />
+        <div className=" bg-gray-50 p-4">
+          <Breadcrumb />
+        </div>
         <div className="min-h-screen bg-gray-100 py-8">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-800 mb-6">Compare Products</h1>
@@ -65,6 +70,7 @@ const Compare = () => {
       </div>
     </div>
         <Footer />
+        <PhonNavbar />
     </div>
   )
 }

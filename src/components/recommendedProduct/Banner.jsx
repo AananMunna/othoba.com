@@ -7,7 +7,7 @@ const Banner = () => {
     <img src="https://images.othoba.com/images/thumbs/0552494_App--Image.png" className='w-96' alt=""/>
   </div>
   <div className="middle">
-  <button className="border-2 rounded-sm py-2 px-5 text-center text-md font-semibold uppercase mt-2 bg-[#5face4] text-white border-[#5face4] transition-all hover:border-2 hover:border-white">buy now</button>
+  <button className="border-2 rounded-sm py-2 px-5 text-center text-md font-semibold uppercase mt-2 bg-[#5face4] text-white border-[#5face4] transition-all hover:border-2 hover:border-white">Download</button>
   </div>
   <div className="right">
     <a href="#"><img src="https://www.othoba.com/Themes/Othoba/Content/images/button-1.png" alt=""  /></a>

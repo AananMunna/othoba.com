@@ -1,4 +1,5 @@
 import 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -31,13 +32,13 @@ const Footer = () => {
             <div className=" mb-10">
                 <h3 className='font-bold mb-4 uppercase'>company</h3>
                 <ul className='text-sm text-[#666666]'>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">About Us</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Career</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Contact Us</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Privacy Policy</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Othoba Certified</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Terms & Condition</a></li>
-                    <li className='mt-3 hover:text-blue-600'><a href="#">Next/Same day delivery TC</a></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">About Us</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Career</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Contact Us</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Privacy Policy</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Othoba Certified</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Terms & Condition</Link></li>
+                    <li className='mt-3 hover:text-blue-600'><Link to="/aboutUs">Next/Same day delivery TC</Link></li>
                 </ul>
             </div>
             </div>

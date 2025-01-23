@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; 
+import { Link } from "react-router-dom";
 
 const RecommendedProduct = () => {
   const swiperRef = useRef(null);
@@ -134,7 +135,7 @@ const RecommendedProduct = () => {
       >
         {cards[selectedCategory].map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="card flex flex-col items-center justify-between border border-[#ddd] rounded-md p-5 sm:gap-5">
+            <Link to='ProductDetailPage' className="card flex flex-col items-center justify-between border border-[#ddd] rounded-md p-5 sm:gap-5">
               <div className="left cursor-pointer relative w-34">
                 <img
                   src={card.image}
@@ -160,7 +161,7 @@ const RecommendedProduct = () => {
                   {card.price}
                 </h3>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

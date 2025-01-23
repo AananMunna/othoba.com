@@ -1,4 +1,5 @@
 import "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const ImageCarousel = () => {
@@ -34,7 +35,7 @@ const ImageCarousel = () => {
 
   return (
     <div className=" my-1 container mx-auto p-4 rounded-lg md:flex gap-5">
-        <div className="w-[100%] md:w-[75%] cursor-pointer">
+        <Link to="ProductDetailPage" className="w-[100%] md:w-[75%] cursor-pointer">
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index} className="">
@@ -46,15 +47,23 @@ const ImageCarousel = () => {
           </div>
         ))}
       </Slider>
-      </div>
-      <div className="w-[100%] md:w-[30%] flex flex-col gap-2">
+      </Link>
+      <div className="w-[100%] md:w-[30%] flex flex-col gap-2 justify-center items-center">
         <div className="flex flex-col gap-2">
-        <img src="https://images.othoba.com/images/thumbs/0716706_kitchen%20sink%20right%20side%20web.jpeg" alt=""  className="rounded-xl h-[50%] cursor-pointer"/>
-        <img src="https://images.othoba.com/images/thumbs/0716675_toys-website-imeage.jpeg" alt=""  className="rounded-xl h-[50%] cursor-pointer"/>
+          <Link to="ProductDetailPage">
+        <img src="https://images.othoba.com/images/thumbs/0716706_kitchen%20sink%20right%20side%20web.jpeg" alt=""  className="rounded-xl h-[100%] cursor-pointer"/>
+          </Link>
+          <Link to="ProductDetailPage">
+        <img src="https://images.othoba.com/images/thumbs/0716675_toys-website-imeage.jpeg" alt=""  className="rounded-xl h-[100%] cursor-pointer"/>
+          </Link>
         </div>
         <div className="flex gap-2">
-            <img src="https://images.othoba.com/images/thumbs/0716738_Flower-Tub-RSW.jpeg" alt="" className="rounded-xl w-[49%] cursor-pointer"/>
-            <img src="https://images.othoba.com/images/thumbs/0716680_Topper-RSW.jpeg" alt="" className="rounded-xl w-[49%] cursor-pointer"/>
+          <Link to="ProductDetailPage">
+            <img src="https://images.othoba.com/images/thumbs/0716738_Flower-Tub-RSW.jpeg" alt="" className="rounded-xl w-[100%] cursor-pointer"/>
+          </Link>
+          <Link to="ProductDetailPage">
+            <img src="https://images.othoba.com/images/thumbs/0716680_Topper-RSW.jpeg" alt="" className="rounded-xl w-[100%] cursor-pointer"/>
+          </Link>
         </div>
       </div>
     </div>

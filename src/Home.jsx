@@ -19,6 +19,7 @@ import PhonNavbar from './components/phonNavbar/PhonNavbar'
 import ImageCarousel from './components/imageCarousel/ImageCarousel'
 import ImageGallery from './components/imageGallery/ImageGallery'
 
+
 const Home = () => {
   return (
     <>
