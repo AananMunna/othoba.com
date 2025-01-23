@@ -29,6 +29,8 @@ import PaymentMethods from './components/RouterComponents/PaymentMethods'
 import SupportCenter from './components/RouterComponents/SupportCenter'
 import HowToShopOnOthoba from './components/RouterComponents/HowToShopOnOthoba'
 import FeaturedRecommendations from './components/RouterComponents/FeaturedRecommendations'
+import AccountPage from './components/RouterComponents/AccountPage'
+import ProductSearchPage from './components/RouterComponents/ProductSearchPage';
 
 const App = () => {
   return (
@@ -61,6 +63,8 @@ const App = () => {
       <Route path="/SupportCenter" element={<SupportCenter />} />
       <Route path="/HowToShopOnOthoba" element={<HowToShopOnOthoba />} />
       <Route path="/FeaturedRecommendations" element={<FeaturedRecommendations />} />
+      <Route path="/AccountPage" element={<AccountPage />} />
+      <Route path="/ProductSearchPage" element={<ProductSearchPage />} />
       
     </Routes>
     <Toy />
