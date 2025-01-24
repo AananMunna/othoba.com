@@ -44,7 +44,7 @@ const MobileSearchBar = () => {
           value={query}
           onChange={handleSearchChange}
           placeholder="Search for products..."
-          className="p-2 w-60 bg-gray-200 text-black focus:outline-none"
+          className="p-2 max-w-40 bg-gray-200 text-black focus:outline-none"
         />
 
         {/* Search Button */}
