@@ -37,7 +37,7 @@ const ForgotPassword = () => {
     <div className=" bg-gray-50 p-4">
           <Breadcrumb />
         </div>
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4">
+    <div className="py-5 bg-gray-50 flex items-center justify-center py-12 px-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">Forgot Password?</h2>
 

@@ -4,6 +4,7 @@ import Navbar from '../layOut/Navbar'
 import Footer from '../layOut/Footer'
 import Breadcrumb from './BreadCumb'
 import PhonNavbar from '../phonNavbar/PhonNavbar'
+import { Link } from 'react-router-dom'
 
 const Compare = () => {
   const products = [
@@ -61,9 +62,11 @@ const Compare = () => {
                   </li>
                 ))}
               </ul>
-              <button className="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-200">
+              <Link to='/cart'>
+                <button className="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-200">
                 Add to Cart
               </button>
+              </Link>
             </div>
           ))}
         </div>
