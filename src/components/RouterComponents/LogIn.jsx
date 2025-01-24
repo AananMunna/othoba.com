@@ -16,7 +16,7 @@ import PhonNavbar from '../phonNavbar/PhonNavbar'
         <div className=" bg-gray-50 p-4">
           <Breadcrumb />
         </div>
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-bl from-green-400 via-blue-500 to-purple-600">
+        <div className="py-5 flex items-center justify-center bg-gradient-to-bl from-green-400 via-blue-500 to-purple-600">
       <div className="bg-white rounded-lg shadow-2xl w-full max-w-md p-8">
         <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-6">Welcome Back</h2>
         <p className="text-gray-500 text-center mb-8">
