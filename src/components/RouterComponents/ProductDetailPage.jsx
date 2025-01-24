@@ -4,6 +4,7 @@ import Navbar from '../layOut/Navbar';
 import Breadcrumb from './BreadCumb';
 import Footer from '../layOut/Footer';
 import PhonNavbar from '../phonNavbar/PhonNavbar';
+import { Link } from 'react-router-dom';
 
 const ProductDetailPage = () => {
   const [quantity, setQuantity] = useState(1);
@@ -85,9 +86,11 @@ const ProductDetailPage = () => {
             </div>
 
             {/* Add to Cart Button */}
+            <Link to='/cart'>
             <button className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 mt-6 transition duration-200">
               Add to Cart
             </button>
+            </Link>
           </div>
         </div>
 
