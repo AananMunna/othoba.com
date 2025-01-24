@@ -4,6 +4,7 @@ import Navbar from '../layOut/Navbar';
 import Breadcrumb from './BreadCumb';
 import Footer from '../layOut/Footer';
 import PhonNavbar from '../phonNavbar/PhonNavbar';
+import { Link } from 'react-router-dom';
 
 const ProductListingPage = () => {
   const [selectedBrand, setSelectedBrand] = useState('Daily Ritual');
@@ -70,9 +71,11 @@ const ProductListingPage = () => {
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
                   <p className="text-gray-600">${product.price.toFixed(2)}</p>
+                  <Link to='/cart'>
                   <button className="mt-4 w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700">
                     Add to Cart
                   </button>
+                  </Link>
                 </div>
               </div>
             ))
