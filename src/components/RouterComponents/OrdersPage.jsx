@@ -53,7 +53,7 @@ const OrdersPage = () => {
           {orders.map((order) => (
             <div
               key={order.id}
-              className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-200"
+              className="flex flex-col items-center gap-4 p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-200"
             >
               <img
                 src={order.image}

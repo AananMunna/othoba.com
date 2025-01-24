@@ -73,7 +73,7 @@ const PopularBrand = () => {
         <h4 className="my-5 text-lg font-semibold">Most Popular Brands</h4>
         <div className="border pt-5">
       <Swiper
-        slidesPerView={8} // Always 2 cards visible per row
+        slidesPerView={4} // Always 2 cards visible per row
         spaceBetween={0}
         loop={true} // Enable infinite loop
         autoplay={{
@@ -95,7 +95,7 @@ const PopularBrand = () => {
                 <img
                   src={card.image}
                   alt={card.title}
-                  className="w-[100%] h-auto"
+                  className="w-full max-w-full h-full"
                 />
             </Link>
           </SwiperSlide>
