@@ -69,23 +69,23 @@ const HamburgerMenu = () => {
             <ul className="text-sm">
               <li className="mt-2 hover:text-blue-400 flex items-center gap-2">
                 <i className="bi bi-basket"></i>
-                <Link to="/category/food-grocery">Food & Grocery</Link>
+                <Link to="/shop">Food & Grocery</Link>
               </li>
               <li className="mt-2 hover:text-blue-400 flex items-center gap-2">
-                <i className="bi bi-lightning"></i>
-                <Link to="/category/electronics">Electronics</Link>
-              </li>
-              <li className="mt-2 hover:text-blue-400 flex items-center gap-2">
-                <i className="bi bi-shirt"></i>
-                <Link to="/category/fashion">Fashion</Link>
+                <i className="bi bi-person-standing-dress"></i>
+                <Link to="/shop">Electronics</Link>
               </li>
               <li className="mt-2 hover:text-blue-400 flex items-center gap-2">
                 <i className="bi bi-house"></i>
-                <Link to="/category/home-appliances">Home Appliances</Link>
+                <Link to="/shop">Fashion</Link>
+              </li>
+              <li className="mt-2 hover:text-blue-400 flex items-center gap-2">
+                <i className="bi bi-house"></i>
+                <Link to="/shop">Home Appliances</Link>
               </li>
               <li className="mt-2 hover:text-blue-400 flex items-center gap-2">
                 <i className="bi bi-book"></i>
-                <Link to="/category/books">Books</Link>
+                <Link to="/shop">Books</Link>
               </li>
             </ul>
           </div>

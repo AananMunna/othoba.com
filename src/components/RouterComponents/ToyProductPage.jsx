@@ -11,8 +11,8 @@ const ToyProductPage = () => {
 
   // Sample products data (10 toys)
   const toys = [
-    { id: 1, name: 'Toy Car', price: 29.99, image: 'https://via.placeholder.com/150' },
-    { id: 2, name: 'Action Figure', price: 19.99, image: 'https://via.placeholder.com/150' },
+    { id: 1, name: 'Toy Car', price: 29.99, image: 'https://images.othoba.com/images/thumbs/0711201_cute-offwhite-teddy-bear-stuffed-toy-with-pink-black-heart_300.jpeg' },
+    { id: 2, name: 'Action Figure', price: 19.99, image: 'https://images.othoba.com/images/thumbs/0711192_orange-one-eye-monster-garten-of-banban-characters-plush-20cm_300.jpeg' },
     { id: 3, name: 'Doll', price: 24.99, image: 'https://via.placeholder.com/150' },
     { id: 4, name: 'Building Blocks', price: 39.99, image: 'https://via.placeholder.com/150' },
     { id: 5, name: 'Toy Train', price: 49.99, image: 'https://via.placeholder.com/150' },
@@ -44,10 +44,10 @@ const ToyProductPage = () => {
         <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">Our Toy Collection</h1>
 
         {/* Toy Cards Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {toys.map((toy) => (
             <div key={toy.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src={toy.image} alt={toy.name} className="w-full h-40 object-cover" />
+              <img src={toy.image} alt={toy.name} className="w-full h-50 object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-gray-800">{toy.name}</h3>
                 <p className="text-gray-600 text-lg mb-4">${toy.price.toFixed(2)}</p>

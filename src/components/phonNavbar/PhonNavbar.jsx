@@ -13,7 +13,7 @@ const PhonNavbar = () => {
         to="/AccountPage"
         className={`px-3 py-1 rounded-md ${getActiveClass('/AccountPage')}`}
       >
-        <i className="bi bi-house text-2xl"></i>
+      <i className="bi bi-person text-2xl"></i>
         <p className="text-xs uppercase">Account</p>
       </Link>
       <Link
@@ -27,7 +27,7 @@ const PhonNavbar = () => {
         to="/"
         className={`px-3 py-1 rounded-md ${getActiveClass('/')}`}
       >
-        <i className="bi bi-person text-2xl"></i>
+        <i className="bi bi-house text-2xl"></i>
         <p className="text-xs uppercase">Home</p>
       </Link>
       <Link
