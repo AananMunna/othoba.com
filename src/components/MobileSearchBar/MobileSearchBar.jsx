@@ -22,7 +22,7 @@ const MobileSearchBar = () => {
 
   return (
     <div className="relative">
-      <form onSubmit={handleSearchSubmit} className="flex items-center bg-white rounded-lg">
+      <form onSubmit={handleSearchSubmit} className="flex items-center bg-gray-200 rounded-lg">
         {/* Category Dropdown */}
         <select
           value={selectedCategory}
