@@ -16,7 +16,7 @@ const Register = () => {
     <div className=" bg-gray-50 p-4">
     <Breadcrumb />
     </div>
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <div className="py-5 flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
       <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-8">
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">Create Your Account</h2>
         <form>

@@ -22,9 +22,9 @@ const HamburgerMenu = () => {
       {/* Hamburger Icon */}
       <button
         onClick={toggleMenu}
-        className="text-white"
+        className="text-white mb-2"
       >
-        <i className="bi bi-list text-3xl"></i>
+        <i className="bi bi-list text-4xl"></i>
       </button>
 
       {/* Sidebar Menu */}
